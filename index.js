@@ -49,7 +49,7 @@ async function run() {
     const get_project_id = `
     query($owner:String!, $name:String!, $number:Int!){
       repository(owner: $owner, name: $name) {
-        project(number: $number) {
+        projectV2(number: $number) {
           id
         }
       }
